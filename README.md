@@ -1,71 +1,10 @@
 ## CreAtiveTTV
 
+![deploy workflow](https://github.com/grazie-a-k-a-keita/creative-ttv/actions/workflows/deploy.yml/badge.svg)
+
 入力されたテキストを音声として出力するサービス
 
 ※ TTVとは、 `Text to Voice` の略
-
-### How To Develop
-
-#### React - Vite
-
-```bash
-# サーバー起動
-$ bun dev
-```
-
-#### Firebase Hosting - 初回
-
-[Firebase ドキュメント](https://firebase.google.com/docs/hosting/quickstart?hl=ja)
-
-1. Firebase CLI をインストールする
-
-```bash
-$ bun add firebase-tools
-```
-
-2. `package.json` に `script` を追加
-
-```js
-"scripts": {
-  ...
-  "firebase": "firebase"
-}
-```
-
-3. Firebase CLI にログイン
-
-```bash
-$ bun run firebase login
-$ bun run firebase projects:list
-```
-
-4. プロジェクトを初期化する
-
-```bash
-$ bun run firebase init hosting
-```
-
-5. サイトにデプロイする
-
-```bash
-$ bun run firebase deploy --only hosting
-```
-
-#### Firebase Hosting - 開発後
-
-1. ビルド
-
-```bash
-$ bun run build
-```
-
-2. 再デプロイ
-
-```bash
-# 未ログイン状態の場合はログインを先に行う
-# dist 配下のプロジェクトがデプロイされる
-$ bun run firebase deploy --only hosting
-```
 
 ### Web Speech API
 
@@ -87,8 +26,7 @@ $ bun run firebase deploy --only hosting
 
 ### Domain
 
-- [creative-ttv.web.app](https://creative-ttv.web.app/)
-- [creative-ttv.firebaseapp.com](https://creative-ttv.firebaseapp.com/)
+- [grazie-a-k-a-keita.github.io/creative-ttv/](https://grazie-a-k-a-keita.github.io/creative-ttv/)
 
 ### Other
 
